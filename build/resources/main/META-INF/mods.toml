@@ -1,0 +1,37 @@
+
+modLoader="javafml"
+loaderVersion="[36.2.0,)"
+license="GNU GPLv3"
+issueTrackerURL="https://github.com/Platinum234/ExhibitAdditions/issues"
+
+[[mods]]
+modId="exhibitadditons"
+version="${file.jarVersion}"
+displayName="Zawa: Exhibit Additions Addon"
+#updateJSONURL=""
+displayURL="https://www.curseforge.com/minecraft/mc-mods/exhibit-additions"
+logoFile="logo.png"
+credits="Platinum, Arty, HelloCrossy67, LuzimBR"
+authors="HelloCrossy67"
+description='''Adding those missing animals to your MC zoos!'''
+
+[[dependencies.exhibitadditons]]
+modId="forge"
+mandatory=true
+versionRange="[36.2.20,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.exhibitadditons]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5,1.17)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.exhibitadditons]]
+modId="zawa"
+mandatory=true
+versionRange="[1.16.5-1.0.2-BeefBeta-TropicalExpedition3,)"
+ordering="AFTER"
+side="BOTH"

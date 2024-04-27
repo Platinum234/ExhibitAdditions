@@ -1,0 +1,88 @@
+{
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2024-04-16 21:44:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2024-04-16 21:44:37 +0100"
+    },
+    "done": true
+  },
+  "zawa:evolved": {
+    "criteria": {
+      "koala": "2024-04-15 20:30:45 +0100",
+      "african_wild_dog": "2024-04-15 20:30:45 +0100",
+      "macaw": "2024-04-15 20:30:45 +0100",
+      "mandrill": "2024-04-15 20:30:45 +0100",
+      "bald_eagle": "2024-04-15 20:30:45 +0100",
+      "grevys_zebra": "2024-04-15 20:30:45 +0100",
+      "polar_bear": "2024-04-15 20:30:45 +0100",
+      "kakapo": "2024-04-15 20:30:45 +0100",
+      "orca": "2024-04-15 20:30:45 +0100",
+      "emperor_penguin": "2024-04-15 20:30:45 +0100",
+      "hornbill": "2024-04-15 20:30:45 +0100",
+      "sumatran_orangutan": "2024-04-15 20:30:45 +0100",
+      "red_kangaroo": "2024-04-15 20:30:45 +0100",
+      "spider_monkey": "2024-04-15 20:30:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2024-04-16 21:44:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2024-04-16 21:42:31 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2024-04-16 21:44:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2024-04-16 21:44:37 +0100"
+    },
+    "done": true
+  },
+  "zawa:animals_101": {
+    "criteria": {
+      "data_book": "2024-04-15 20:36:32 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2024-04-16 21:44:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2024-04-16 21:44:12 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:mountains": "2024-04-15 20:31:16 +0100",
+      "minecraft:forest": "2024-04-16 21:43:42 +0100",
+      "minecraft:taiga_hills": "2024-04-15 20:30:43 +0100",
+      "minecraft:birch_forest": "2024-04-15 20:31:14 +0100",
+      "minecraft:river": "2024-04-15 20:31:22 +0100",
+      "minecraft:wooded_mountains": "2024-04-15 20:31:17 +0100",
+      "minecraft:plains": "2024-04-16 21:43:47 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}

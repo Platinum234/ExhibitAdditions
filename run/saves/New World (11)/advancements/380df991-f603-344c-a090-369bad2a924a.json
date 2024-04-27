@@ -1,0 +1,43 @@
+{
+  "zawa:evolved": {
+    "criteria": {
+      "koala": "2024-04-21 13:09:45 +0100",
+      "african_wild_dog": "2024-04-21 13:09:45 +0100",
+      "macaw": "2024-04-21 13:09:45 +0100",
+      "mandrill": "2024-04-21 13:09:45 +0100",
+      "bald_eagle": "2024-04-21 13:09:45 +0100",
+      "grevys_zebra": "2024-04-21 13:09:45 +0100",
+      "polar_bear": "2024-04-21 13:09:45 +0100",
+      "kakapo": "2024-04-21 13:09:45 +0100",
+      "orca": "2024-04-21 13:09:45 +0100",
+      "emperor_penguin": "2024-04-21 13:09:45 +0100",
+      "hornbill": "2024-04-21 13:09:45 +0100",
+      "sumatran_orangutan": "2024-04-21 13:09:45 +0100",
+      "red_kangaroo": "2024-04-21 13:09:45 +0100",
+      "spider_monkey": "2024-04-21 13:09:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_something": "2024-04-21 13:39:00 +0100"
+    },
+    "done": true
+  },
+  "zawa:animals_101": {
+    "criteria": {
+      "data_book": "2024-04-21 13:10:21 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2024-04-21 13:09:27 +0100",
+      "minecraft:mountains": "2024-04-21 13:13:19 +0100",
+      "minecraft:wooded_mountains": "2024-04-21 13:13:22 +0100",
+      "minecraft:stone_shore": "2024-04-21 13:59:51 +0100"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}
