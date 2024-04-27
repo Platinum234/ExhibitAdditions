@@ -28,16 +28,28 @@
 [tropical_alpine]
 	biomes = ["minecraft:modified_jungle", "minecraft:modified_jungle_edge", "minecraft:bamboo_jungle", "minecraft:bamboo_jungle_hills"]
 
+	[tropical_alpine.gerenuk]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
+	[tropical_alpine.swamp_monkey]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
+	[tropical_alpine.peccary]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
 	[tropical_alpine.mandrill]
 		chance = 10
 		min = 3
 		max = 4
-		enabled = true
-
-	[tropical_alpine.spectacled_bear]
-		chance = 2
-		min = 2
-		max = 3
 		enabled = true
 
 	[tropical_alpine.great_indian_hornbill]
@@ -46,15 +58,15 @@
 		max = 3
 		enabled = true
 
-	[tropical_alpine.bush_dog]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
 	[tropical_alpine.white_bellied_spider_monkey]
 		chance = 10
 		min = 3
+		max = 3
+		enabled = true
+
+	[tropical_alpine.potto]
+		chance = 2
+		min = 2
 		max = 3
 		enabled = true
 

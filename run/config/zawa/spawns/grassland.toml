@@ -13,25 +13,25 @@
 [dry_grassland]
 	biomes = ["minecraft:plains", "minecraft:savanna", "minecraft:savanna_plateau", "minecraft:sunflower_plains", "minecraft:badlands", "minecraft:badlands_plateau"]
 
+	[dry_grassland.gerenuk]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
 	[dry_grassland.arizona_bark_scorpion]
 		chance = 4
 		min = 1
 		max = 1
 		enabled = true
 
-	[dry_grassland.rhea]
+	[dry_grassland.swamp_monkey]
 		chance = 2
 		min = 2
 		max = 3
 		enabled = true
 
-	[dry_grassland.spectacled_bear]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
-	[dry_grassland.bush_dog]
+	[dry_grassland.peccary]
 		chance = 2
 		min = 2
 		max = 3
@@ -41,6 +41,12 @@
 		chance = 4
 		min = 1
 		max = 1
+		enabled = true
+
+	[dry_grassland.potto]
+		chance = 2
+		min = 2
+		max = 3
 		enabled = true
 
 	[dry_grassland.african_praying_mantis]
@@ -61,12 +67,6 @@
 		max = 2
 		enabled = true
 
-	[dry_grassland.blackbuck]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
 	[dry_grassland.butterfly]
 		chance = 10
 		min = 1
@@ -83,11 +83,5 @@
 		chance = 4
 		min = 1
 		max = 1
-		enabled = true
-
-	[dry_grassland.porcupine]
-		chance = 2
-		min = 2
-		max = 3
 		enabled = true
 

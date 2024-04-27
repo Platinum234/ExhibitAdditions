@@ -13,7 +13,6 @@ import net.minecraftforge.fml.RegistryObject;
 import org.zawamod.zawa.Zawa;
 import org.zawamod.zawa.config.ZawaSpawnCategory;
 import org.zawamod.zawa.world.entity.ZawaEntityRegistry;
-import org.zawamod.zawa.world.entity.ambient.ZawaAmbientFishEntity;
 import org.zawamod.zawa.world.entity.animal.ZawaBaseEntity;
 
 public class ExhibitAdditionsEntities {
@@ -22,7 +21,6 @@ public class ExhibitAdditionsEntities {
     public static final RegistryObject<EntityType<SwampMonkeyEntity>> SWAMP_MONKEY =
             REGISTRY.builder(SwampMonkeyEntity::new, EntityClassification.CREATURE)
                     .attributes(SwampMonkeyEntity::registerAttributes)
-                    //.renderer(() -> SwampMonkeyRenderer::new)
                     .renderer(() -> SwampMonkeyRenderer::new)
                     .spawns(2, 2, 3, ZawaSpawnCategory.DRY_GRASSLAND, ZawaSpawnCategory.DRY_RAINFOREST, ZawaSpawnCategory.TROPICAL_ALPINE)
                     .data(entityBuilder -> entityBuilder.sized(1.0F, 1.0F).clientTrackingRange(10))
@@ -50,6 +48,10 @@ public class ExhibitAdditionsEntities {
                     .build("potto");
 
     public static void registerSpawnPlacements() {
+        EntitySpawnPlacementRegistry.register(POTTO.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(PECCARY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(GERENUK.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(SWAMP_MONKEY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
 
     }
 }

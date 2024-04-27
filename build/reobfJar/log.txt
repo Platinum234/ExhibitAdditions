@@ -1,5 +1,5 @@
 Java Launcher: /Library/Java/JavaVirtualMachines/jdk1.8.0_361.jdk/Contents/Home/bin/java
-Arguments: '--in-jar, /Users/callumross/Documents/GitHub/WondersOfTheWorld/ExhibitAdditions/build/libs/ecoregions-1.16.5-1.0.0-beta1.jar, --out-jar, /Users/callumross/Documents/GitHub/WondersOfTheWorld/ExhibitAdditions/build/reobfJar/output.jar, --srg-in, /Users/callumross/Documents/GitHub/WondersOfTheWorld/ExhibitAdditions/build/createMcpToSrg/output.tsrg, --live'
+Arguments: '--in-jar, /Users/callumross/Documents/GitHub/WondersOfTheWorld/ExhibitAdditions/build/libs/exhibitadditions-1.16.5-1.0.0-beta1.jar, --out-jar, /Users/callumross/Documents/GitHub/WondersOfTheWorld/ExhibitAdditions/build/reobfJar/output.jar, --srg-in, /Users/callumross/Documents/GitHub/WondersOfTheWorld/ExhibitAdditions/build/createMcpToSrg/output.tsrg, --live'
 Classpath:
  - /Users/callumross/.gradle/caches/forge_gradle/maven_downloader/net/md-5/SpecialSource/1.11.0/SpecialSource-1.11.0-shaded.jar
  - /Users/callumross/.gradle/caches/forge_gradle/deobf_dependencies/curse/maven/zawa-evolved-581942/4752624_mapped_official_1.16.5/zawa-evolved-581942-4752624_mapped_official_1.16.5.jar

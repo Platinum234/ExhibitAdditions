@@ -16,6 +16,12 @@
 		max = 1
 		enabled = true
 
+	[dry_rainforest.gerenuk]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
 	[dry_rainforest.red_shouldered_macaw]
 		chance = 10
 		min = 1
@@ -28,13 +34,19 @@
 		max = 4
 		enabled = true
 
+	[dry_rainforest.swamp_monkey]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
 	[dry_rainforest.ghost_praying_mantis]
 		chance = 4
 		min = 1
 		max = 1
 		enabled = true
 
-	[dry_rainforest.rhea]
+	[dry_rainforest.peccary]
 		chance = 2
 		min = 2
 		max = 3
@@ -46,22 +58,16 @@
 		max = 4
 		enabled = true
 
-	[dry_rainforest.spectacled_bear]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
-	[dry_rainforest.bush_dog]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
 	[dry_rainforest.antilles_pinktoe_tarantula]
 		chance = 4
 		min = 1
 		max = 1
+		enabled = true
+
+	[dry_rainforest.potto]
+		chance = 2
+		min = 2
+		max = 3
 		enabled = true
 
 [wet_rainforest]
@@ -77,12 +83,6 @@
 		chance = 10
 		min = 1
 		max = 4
-		enabled = true
-
-	[wet_rainforest.mongoose]
-		chance = 10
-		min = 2
-		max = 3
 		enabled = true
 
 	[wet_rainforest.wrinkled_hornbill]
@@ -151,12 +151,6 @@
 		max = 3
 		enabled = true
 
-	[wet_rainforest.giant_otter]
-		chance = 10
-		min = 2
-		max = 4
-		enabled = true
-
 	[wet_rainforest.plecostomus]
 		chance = 10
 		min = 1
@@ -169,22 +163,10 @@
 		max = 4
 		enabled = true
 
-	[wet_rainforest.red_river_hog]
-		chance = 10
-		min = 2
-		max = 3
-		enabled = true
-
 	[wet_rainforest.scarlet_macaw]
 		chance = 10
 		min = 1
 		max = 4
-		enabled = true
-
-	[wet_rainforest.loris]
-		chance = 10
-		min = 2
-		max = 3
 		enabled = true
 
 [deep_rainforest]
@@ -200,12 +182,6 @@
 		chance = 15
 		min = 3
 		max = 4
-		enabled = true
-
-	[deep_rainforest.mongoose]
-		chance = 10
-		min = 2
-		max = 3
 		enabled = true
 
 	[deep_rainforest.palawan_hornbill]
@@ -262,12 +238,6 @@
 		max = 4
 		enabled = true
 
-	[deep_rainforest.giant_otter]
-		chance = 10
-		min = 2
-		max = 4
-		enabled = true
-
 	[deep_rainforest.rhinoceros_hornbill]
 		chance = 10
 		min = 2
@@ -280,21 +250,9 @@
 		max = 1
 		enabled = true
 
-	[deep_rainforest.red_river_hog]
-		chance = 10
-		min = 2
-		max = 3
-		enabled = true
-
 	[deep_rainforest.maned_three_toed_sloth]
 		chance = 10
 		min = 1
 		max = 1
-		enabled = true
-
-	[deep_rainforest.loris]
-		chance = 10
-		min = 2
-		max = 3
 		enabled = true
 

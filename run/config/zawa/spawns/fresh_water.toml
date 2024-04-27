@@ -25,39 +25,9 @@
 [slow_fresh_water]
 	biomes = ["minecraft:swamp", "minecraft:swamp_hills"]
 
-	[slow_fresh_water.bass]
-		chance = 10
-		min = 3
-		max = 5
-		enabled = true
-
-	[slow_fresh_water.mongoose]
-		chance = 10
-		min = 2
-		max = 3
-		enabled = true
-
-	[slow_fresh_water.giant_otter]
-		chance = 10
-		min = 2
-		max = 4
-		enabled = true
-
-	[slow_fresh_water.red_river_hog]
-		chance = 10
-		min = 2
-		max = 3
-		enabled = true
-
 	[slow_fresh_water.flamingo]
 		chance = 15
 		min = 4
 		max = 6
-		enabled = true
-
-	[slow_fresh_water.loris]
-		chance = 10
-		min = 2
-		max = 3
 		enabled = true
 
