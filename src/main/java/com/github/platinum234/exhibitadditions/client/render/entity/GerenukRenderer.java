@@ -8,13 +8,17 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class GerenukRenderer extends ZawaMobRenderer<GerenukEntity, GerenukModel> {
     public GerenukRenderer(EntityRendererManager manager) {
-        super(manager, new GerenukModel.Adult(), new GerenukModel.Child(), 0.65F);
+        super(manager, new GerenukModel.Adult(), new GerenukModel.Child(), 0.6F);
     }
 
     @Override
     protected void scale(GerenukEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.8F : 1.0F;
+        float scale = entity.isBaby() ? 0.5F : 0.85F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
+    }
+    @Override
+    protected boolean isSexuallyDimorphic() {
+        return true;
     }
 }

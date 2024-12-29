@@ -34,6 +34,12 @@
 		max = 3
 		enabled = true
 
+	[tropical_alpine.pronghorn]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
 	[tropical_alpine.swamp_monkey]
 		chance = 2
 		min = 2
@@ -52,8 +58,20 @@
 		max = 4
 		enabled = true
 
+	[tropical_alpine.wildebeest]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
 	[tropical_alpine.great_indian_hornbill]
 		chance = 10
+		min = 2
+		max = 3
+		enabled = true
+
+	[tropical_alpine.hyrax]
+		chance = 2
 		min = 2
 		max = 3
 		enabled = true
@@ -65,6 +83,12 @@
 		enabled = true
 
 	[tropical_alpine.potto]
+		chance = 2
+		min = 2
+		max = 3
+		enabled = true
+
+	[tropical_alpine.langur]
 		chance = 2
 		min = 2
 		max = 3

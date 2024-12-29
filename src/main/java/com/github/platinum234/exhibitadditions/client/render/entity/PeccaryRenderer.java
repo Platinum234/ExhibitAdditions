@@ -8,12 +8,12 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class PeccaryRenderer extends ZawaMobRenderer<PeccaryEntity, PeccaryModel> {
     public PeccaryRenderer(EntityRendererManager manager) {
-        super(manager, new PeccaryModel.Adult(), new PeccaryModel.Child(), 0.65F);
+        super(manager, new PeccaryModel.Adult(), new PeccaryModel.Child(), 0.5F);
     }
 
     @Override
     protected void scale(PeccaryEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.8F : 1.0F;
+        float scale = entity.isBaby() ? 1.0F : 1.0F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
     }

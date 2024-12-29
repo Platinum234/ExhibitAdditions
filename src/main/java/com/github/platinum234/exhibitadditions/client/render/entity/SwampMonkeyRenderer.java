@@ -8,12 +8,12 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class SwampMonkeyRenderer extends ZawaMobRenderer<SwampMonkeyEntity, SwampMonkeyModel> {
     public SwampMonkeyRenderer(EntityRendererManager manager) {
-        super(manager, new SwampMonkeyModel.Adult(), new SwampMonkeyModel.Child(), 0.65F);
+        super(manager, new SwampMonkeyModel.Adult(), new SwampMonkeyModel.Child(), 0.5F);
     }
 
     @Override
     protected void scale(SwampMonkeyEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.8F : 1.0F;
+        float scale = entity.isBaby() ? 0.5F : 1.0F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
     }
