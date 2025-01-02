@@ -264,8 +264,8 @@ public abstract class PottoModel extends ZawaBaseModel<PottoEntity> {
 
 
         public Child() {
-            this.texWidth = 128;
-            this.texHeight = 64;
+            this.texWidth = 64;
+            this.texHeight = 32;
             this.ThighLeft = new ModelRenderer(this, 0, 20);
             this.ThighLeft.setPos(1.6F, 1.2F, 1.2F);
             this.ThighLeft.addBox(-1.0F, 0.0F, -1.0F, 2.0F, 3.0F, 2.0F, 0.0F, 0.0F, 0.0F);

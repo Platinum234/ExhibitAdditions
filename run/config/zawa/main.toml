@@ -3,6 +3,8 @@
 	# Enable automatic naming for baby animals; this will give a placeholder name to the offspring of named animals.
 	# Set this to true if you operate a server that has a lag clearing feature that wipes un-named entities!
 	name_babies = false
+	# Enable or disable NPC Zookeeper spawns.
+	spawn_zookeepers = true
 
 [Timers]
 	# Gestation time is in minecraft ticks, and will be multiplied by double the entity's size stat (where tiny=1 and giant=5) plus one.

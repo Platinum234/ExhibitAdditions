@@ -13,7 +13,7 @@ public class PeccaryRenderer extends ZawaMobRenderer<PeccaryEntity, PeccaryModel
 
     @Override
     protected void scale(PeccaryEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 1.0F : 1.0F;
+        float scale = entity.isBaby() ? 0.55F : 1.0F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
     }

@@ -1,19 +1,21 @@
 {
-  "temperament": "defensive",
-  "kibble": "zawa:carnivore_kibble",
-  "size": "small",
-  "fertility": "low",
-  "breeding_item": "minecraft:mutton",
+  "temperament": "neutral",
+  "kibble": "zawa:omnivore_kibble",
+  "size": "medium",
+  "fertility": "medium",
+  "breeding_item": "zawa:earthworm",
   "litter_size": {
     "min": 1,
-    "max": 3
+    "max": 1
   },
-  "diet": "zawa:small_carnivore",
-  "speed": "fast",
+  "diet": "zawa:omnivore",
+  "speed": "medium",
   "enrichment": {
     "zawa:blocks": [
-      "zawa:scratching_post",
-      "zawa:sprinkler"
+      "zawa:puzzle_feeder",
+      "zawa:apple_ice_treat",
+      "zawa:branch",
+      "zawa:pineapple_pinata"
     ]
   },
   "variant_count": 3

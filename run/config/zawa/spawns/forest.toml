@@ -16,6 +16,12 @@
 		max = 4
 		enabled = true
 
+	[dry_forest.ring_tailed_lemur]
+		chance = 8
+		min = 4
+		max = 6
+		enabled = true
+
 	[dry_forest.koala]
 		chance = 10
 		min = 1

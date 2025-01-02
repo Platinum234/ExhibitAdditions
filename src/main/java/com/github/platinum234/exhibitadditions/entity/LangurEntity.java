@@ -30,14 +30,13 @@ public class LangurEntity extends ZawaLandEntity implements SpeciesVariantsEntit
     }
 
     public static AttributeModifierMap.MutableAttribute registerAttributes() {
-        return createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.30F).add(Attributes.MAX_HEALTH, 4.0).add(Attributes.ATTACK_DAMAGE, 0.5);
+        return createMobAttributes().add(Attributes.MOVEMENT_SPEED, 0.30F).add(Attributes.MAX_HEALTH, 5.0).add(Attributes.ATTACK_DAMAGE, 0.5);
     }
 
     @Override
     protected void registerGoals() {
         super.registerGoals();
         this.goalSelector.addGoal(1, new PanicGoal(this, 1.33));
-        this.goalSelector.addGoal(7, new SittingEntity.SitGoal(this));
     }
 
     @Override
@@ -96,5 +95,9 @@ public class LangurEntity extends ZawaLandEntity implements SpeciesVariantsEntit
 
     static {
         CLIMBING = EntityDataManager.defineId(LangurEntity.class, DataSerializers.BOOLEAN);
+    }
+    @Override
+    public float getMaleRatio() {
+        return 0.25F;
     }
 }

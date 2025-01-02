@@ -16,28 +16,10 @@
 		max = 1
 		enabled = true
 
-	[dry_rainforest.gerenuk]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
-	[dry_rainforest.red_shouldered_macaw]
-		chance = 10
-		min = 1
-		max = 4
-		enabled = true
-
 	[dry_rainforest.asian_elephant]
 		chance = 8
 		min = 3
 		max = 4
-		enabled = true
-
-	[dry_rainforest.swamp_monkey]
-		chance = 2
-		min = 2
-		max = 3
 		enabled = true
 
 	[dry_rainforest.ghost_praying_mantis]
@@ -46,16 +28,10 @@
 		max = 1
 		enabled = true
 
-	[dry_rainforest.peccary]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
-	[dry_rainforest.hyrax]
-		chance = 2
-		min = 2
-		max = 3
+	[dry_rainforest.hyacinth_macaw]
+		chance = 10
+		min = 1
+		max = 4
 		enabled = true
 
 	[dry_rainforest.antilles_pinktoe_tarantula]
@@ -64,34 +40,16 @@
 		max = 1
 		enabled = true
 
-	[dry_rainforest.potto]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
-	[dry_rainforest.pronghorn]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
-	[dry_rainforest.hyacinth_macaw]
-		chance = 10
-		min = 1
-		max = 4
-		enabled = true
-
-	[dry_rainforest.wildebeest]
-		chance = 2
-		min = 2
-		max = 3
-		enabled = true
-
 	[dry_rainforest.langur]
 		chance = 2
 		min = 2
 		max = 3
+		enabled = true
+
+	[dry_rainforest.red_fronted_macaw]
+		chance = 10
+		min = 1
+		max = 4
 		enabled = true
 
 [wet_rainforest]
@@ -109,10 +67,22 @@
 		max = 4
 		enabled = true
 
+	[wet_rainforest.swamp_monkey]
+		chance = 10
+		min = 3
+		max = 4
+		enabled = true
+
 	[wet_rainforest.wrinkled_hornbill]
 		chance = 10
 		min = 2
 		max = 3
+		enabled = true
+
+	[wet_rainforest.peccary]
+		chance = 10
+		min = 2
+		max = 4
 		enabled = true
 
 	[wet_rainforest.goliath_birdeater_tarantula]
@@ -169,6 +139,12 @@
 		max = 1
 		enabled = true
 
+	[wet_rainforest.common_chimpanzee]
+		chance = 8
+		min = 4
+		max = 5
+		enabled = true
+
 	[wet_rainforest.brown_spider_monkey]
 		chance = 10
 		min = 3
@@ -190,6 +166,12 @@
 	[wet_rainforest.scarlet_macaw]
 		chance = 10
 		min = 1
+		max = 4
+		enabled = true
+
+	[wet_rainforest.langur]
+		chance = 10
+		min = 3
 		max = 4
 		enabled = true
 
@@ -232,10 +214,22 @@
 		max = 3
 		enabled = true
 
+	[deep_rainforest.potto]
+		chance = 2
+		min = 1
+		max = 1
+		enabled = true
+
 	[deep_rainforest.linnaeuss_two_toed_sloth]
 		chance = 10
 		min = 1
 		max = 1
+		enabled = true
+
+	[deep_rainforest.western_lowland_gorilla]
+		chance = 8
+		min = 4
+		max = 5
 		enabled = true
 
 	[deep_rainforest.brown_throated_sloth]
