@@ -71,6 +71,20 @@ public class ExhibitAdditionsEntities {
                     .spawns(10, 4, 5, ZawaSpawnCategory.DRY_SAVANNA)
                     .data(entityBuilder -> entityBuilder.sized(1.8F, 2.0F).clientTrackingRange(10))
                     .build("wildebeest");
+    public static final RegistryObject<EntityType<WallabyEntity>> WALLABY =
+            REGISTRY.builder(WallabyEntity::new, EntityClassification.CREATURE)
+                    .attributes(WallabyEntity::registerAttributes)
+                    .renderer(() -> WallabyRenderer::new)
+                    .spawns(8, 2, 3, ZawaSpawnCategory.WET_SAVANNA)
+                    .data(entityBuilder -> entityBuilder.sized(1.1F, 1.5F).clientTrackingRange(10))
+                    .build("wallaby");
+    public static final RegistryObject<EntityType<KlipspringerEntity>> KLIPSPRINGER =
+            REGISTRY.builder(KlipspringerEntity::new, EntityClassification.CREATURE)
+                    .attributes(KlipspringerEntity::registerAttributes)
+                    .renderer(() -> KlipspringerRenderer::new)
+                    .spawns(8, 2, 3, ZawaSpawnCategory.WET_SAVANNA)
+                    .data(entityBuilder -> entityBuilder.sized(1.1F, 1.5F).clientTrackingRange(10))
+                    .build("klipspringer");
 
     public static void registerSpawnPlacements() {
         EntitySpawnPlacementRegistry.register(POTTO.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
@@ -81,6 +95,8 @@ public class ExhibitAdditionsEntities {
         EntitySpawnPlacementRegistry.register(LANGUR.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(PRONGHORN.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(WILDEBEEST.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(WALLABY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(KLIPSPRINGER.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
 
     }
 }

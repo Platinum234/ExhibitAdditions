@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "exhibitadditions:item/wallaby_spawn_egg"
+  }
+}
