@@ -186,6 +186,7 @@ public abstract class WallabyModel extends ZawaBaseModel<WallabyEntity> {
             super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
             this.Neck.yRot = netHeadYaw / (180F / (float) Math.PI) * 0.25F;
             this.Head.yRot = netHeadYaw / (180F / (float) Math.PI) * 0.25F;
+
          }
 
         @Override
