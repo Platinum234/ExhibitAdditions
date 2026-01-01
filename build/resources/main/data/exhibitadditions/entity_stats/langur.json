@@ -18,5 +18,8 @@
       "zawa:pineapple_pinata"
     ]
   },
-  "variant_count": 3
+  "variant_count": 7,
+  "captive_variants": [
+    "leucistic"
+  ]
 }

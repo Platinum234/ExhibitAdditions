@@ -35,8 +35,8 @@ public class LangurEntity extends ZawaLandEntity implements SpeciesVariantsEntit
 
     @Override
     protected void registerGoals() {
-        super.registerGoals();
-        this.goalSelector.addGoal(1, new PanicGoal(this, 1.33));
+        //super.registerGoals();
+        //this.goalSelector.addGoal(1, new PanicGoal(this, 1.33));
     }
 
     @Override

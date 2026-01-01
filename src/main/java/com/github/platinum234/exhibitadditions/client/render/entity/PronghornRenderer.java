@@ -13,7 +13,7 @@ public class PronghornRenderer extends ZawaMobRenderer<PronghornEntity, Pronghor
 
     @Override
     protected void scale(PronghornEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.5F : 1.0F;
+        float scale = entity.isBaby() ? 0.9F : 0.9F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
     }

@@ -13,7 +13,7 @@ public class GerenukRenderer extends ZawaMobRenderer<GerenukEntity, GerenukModel
 
     @Override
     protected void scale(GerenukEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.5F : 0.85F;
+        float scale = entity.isBaby() ? 0.9F : 0.9F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
     }

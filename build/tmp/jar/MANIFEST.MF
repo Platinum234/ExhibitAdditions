@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Implementation-Title: ExhibitAdditions
-Implementation-Version: 1.16.5-1.0.0-ExhibitAdditions
+Implementation-Version: 1.16.5-1.1.0-ExhibitAdditionsSecondRelease
 Implementation-Vendor: Platinum234
 

@@ -17,7 +17,7 @@ import org.zawamod.zawa.world.entity.animal.ZawaLandEntity;
 
 import javax.annotation.Nullable;
 
-public class HyraxEntity extends ZawaLandEntity implements SpeciesVariantsEntity {
+public class HyraxEntity extends ZawaLandEntity{
     public HyraxEntity(EntityType<? extends ZawaLandEntity> type, World world) {
         super(type, world);
     }
@@ -28,8 +28,8 @@ public class HyraxEntity extends ZawaLandEntity implements SpeciesVariantsEntity
 
     @Override
     protected void registerGoals() {
-        super.registerGoals();
-        this.goalSelector.addGoal(1, new PanicGoal(this, 1.33));
+        //super.registerGoals();
+        //this.goalSelector.addGoal(1, new PanicGoal(this, 1.33));
     }
 
     @Nullable
@@ -46,10 +46,5 @@ public class HyraxEntity extends ZawaLandEntity implements SpeciesVariantsEntity
 
     protected float getStandingEyeHeight(Pose pose, EntitySize size) {
         return size.height * 0.85F;
-    }
-
-    @Override
-    public int getVariantByBiome(IWorld iWorld) {
-        return random.nextInt(getWildVariants());
     }
 }

@@ -35,10 +35,10 @@ public class WildebeestEntity extends ZawaLandEntity {
     }
     @Override
     protected void registerGoals() {
-        super.registerGoals();
-        this.goalSelector.addGoal(5, new ZawaMeleeAttackGoal(this, 1.5, 1.33, true));
-        this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
-        this.targetSelector.addGoal(3, new NonTamedTargetGoal<>(this, PlayerEntity.class, true, (entity) -> this.distanceToSqr(entity) <= 10.0));
+       // super.registerGoals();
+        //this.goalSelector.addGoal(5, new ZawaMeleeAttackGoal(this, 1.5, 1.33, true));
+        //this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
+        //this.targetSelector.addGoal(3, new NonTamedTargetGoal<>(this, PlayerEntity.class, true, (entity) -> this.distanceToSqr(entity) <= 10.0));
     }
     @Override
     public float getMaleRatio() {

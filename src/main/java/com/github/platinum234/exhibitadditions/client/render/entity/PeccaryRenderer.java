@@ -1,6 +1,7 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
 import com.github.platinum234.exhibitadditions.client.model.PeccaryModel;
+import com.github.platinum234.exhibitadditions.entity.HyraxEntity;
 import com.github.platinum234.exhibitadditions.entity.PeccaryEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -13,8 +14,12 @@ public class PeccaryRenderer extends ZawaMobRenderer<PeccaryEntity, PeccaryModel
 
     @Override
     protected void scale(PeccaryEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.55F : 1.0F;
+        float scale = entity.isBaby() ? 0.7F : 0.95F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
+    }
+    @Override
+    protected boolean hasBabyVariants(PeccaryEntity entity) {
+        return false;
     }
 }

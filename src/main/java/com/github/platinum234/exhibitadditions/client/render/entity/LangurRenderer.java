@@ -13,16 +13,10 @@ public class LangurRenderer extends ZawaMobRenderer<LangurEntity, LangurModel> {
 
     @Override
     protected void scale(LangurEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.5F : 0.8F;
+        float scale = entity.isBaby() ? 0.5F : 0.75F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
     }
-
-    @Override
-    protected boolean isSexuallyDimorphic() {
-        return true;
-    }
-
     @Override
     protected boolean hasBabyVariants(LangurEntity entity) {
         return false;

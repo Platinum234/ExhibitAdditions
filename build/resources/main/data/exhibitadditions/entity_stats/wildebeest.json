@@ -18,5 +18,10 @@
       "zawa:apple_ice_treat"
     ]
   },
-  "variant_count": 5
+  "variant_count": 6,
+  "captive_variants": [
+    "albino",
+    "crowned",
+    "golden"
+  ]
 }

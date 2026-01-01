@@ -27,7 +27,7 @@ public class ExhibitAdditionsEntities {
                     .attributes(GerenukEntity::registerAttributes)
                     .renderer(() -> GerenukRenderer::new)
                     .spawns(8, 2, 3, ZawaSpawnCategory.WET_SAVANNA)
-                    .data(entityBuilder -> entityBuilder.sized(1.1F, 1.5F).clientTrackingRange(10))
+                    .data(entityBuilder -> entityBuilder.sized(1.1F, 1.4F).clientTrackingRange(10))
                     .build("gerenuk");
     public static final RegistryObject<EntityType<PeccaryEntity>> PECCARY =
             REGISTRY.builder(PeccaryEntity::new, EntityClassification.CREATURE)
@@ -55,14 +55,14 @@ public class ExhibitAdditionsEntities {
                     .attributes(LangurEntity::registerAttributes)
                     .renderer(() -> LangurRenderer::new)
                     .spawns(10, 3, 4, ZawaSpawnCategory.WET_RAINFOREST, ZawaSpawnCategory.DRY_RAINFOREST)
-                    .data(entityBuilder -> entityBuilder.sized(0.65F, 0.5F).clientTrackingRange(10))
+                    .data(entityBuilder -> entityBuilder.sized(0.65F, 0.7F).clientTrackingRange(10))
                     .build("langur");
     public static final RegistryObject<EntityType<PronghornEntity>> PRONGHORN =
             REGISTRY.builder(PronghornEntity::new, EntityClassification.CREATURE)
                     .attributes(PronghornEntity::registerAttributes)
                     .renderer(() -> PronghornRenderer::new)
                     .spawns(15, 3, 4, ZawaSpawnCategory.DRY_GRASSLAND)
-                    .data(entityBuilder -> entityBuilder.sized(1.0F, 1.4F).clientTrackingRange(10))
+                    .data(entityBuilder -> entityBuilder.sized(1.0F, 1.35F).clientTrackingRange(10))
                     .build("pronghorn");
     public static final RegistryObject<EntityType<WildebeestEntity>> WILDEBEEST =
             REGISTRY.builder(WildebeestEntity::new, EntityClassification.CREATURE)
@@ -76,14 +76,14 @@ public class ExhibitAdditionsEntities {
                     .attributes(WallabyEntity::registerAttributes)
                     .renderer(() -> WallabyRenderer::new)
                     .spawns(8, 2, 3, ZawaSpawnCategory.WET_SAVANNA)
-                    .data(entityBuilder -> entityBuilder.sized(1.1F, 1.5F).clientTrackingRange(10))
+                    .data(entityBuilder -> entityBuilder.sized(0.8F, 0.9F).clientTrackingRange(10))
                     .build("wallaby");
     public static final RegistryObject<EntityType<KlipspringerEntity>> KLIPSPRINGER =
             REGISTRY.builder(KlipspringerEntity::new, EntityClassification.CREATURE)
                     .attributes(KlipspringerEntity::registerAttributes)
                     .renderer(() -> KlipspringerRenderer::new)
                     .spawns(8, 2, 3, ZawaSpawnCategory.WET_SAVANNA)
-                    .data(entityBuilder -> entityBuilder.sized(1.1F, 1.5F).clientTrackingRange(10))
+                    .data(entityBuilder -> entityBuilder.sized(0.8F, 0.9F).clientTrackingRange(10))
                     .build("klipspringer");
 
     public static void registerSpawnPlacements() {

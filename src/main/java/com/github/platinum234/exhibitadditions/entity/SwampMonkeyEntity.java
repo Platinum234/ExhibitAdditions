@@ -37,8 +37,8 @@ public class SwampMonkeyEntity extends ZawaLandEntity implements ClimbingEntity 
 
     @Override
     protected void registerGoals() {
-        super.registerGoals();
-        this.goalSelector.addGoal(1, new PanicGoal(this, 1.33));
+        //super.registerGoals();
+        //this.goalSelector.addGoal(1, new PanicGoal(this, 1.33));
     }
 
     @Override

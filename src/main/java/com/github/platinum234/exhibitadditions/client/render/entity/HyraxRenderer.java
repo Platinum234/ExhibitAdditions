@@ -8,12 +8,12 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class HyraxRenderer extends ZawaMobRenderer<HyraxEntity, HyraxModel> {
     public HyraxRenderer(EntityRendererManager manager) {
-        super(manager, new HyraxModel.Adult(), new HyraxModel.Child(), 0.3F);
+        super(manager, new HyraxModel.Adult(), new HyraxModel.Child(), 0.25F);
     }
 
     @Override
     protected void scale(HyraxEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.55F : 0.75F;
+        float scale = entity.isBaby() ? 0.4F : 0.85F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
     }
