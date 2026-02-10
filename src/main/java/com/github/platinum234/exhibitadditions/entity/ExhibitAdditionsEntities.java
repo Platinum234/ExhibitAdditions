@@ -85,6 +85,20 @@ public class ExhibitAdditionsEntities {
                     .spawns(8, 2, 3, ZawaSpawnCategory.WET_SAVANNA)
                     .data(entityBuilder -> entityBuilder.sized(0.8F, 0.9F).clientTrackingRange(10))
                     .build("klipspringer");
+    public static final RegistryObject<EntityType<DuikerEntity>> DUIKER =
+            REGISTRY.builder(DuikerEntity::new, EntityClassification.CREATURE)
+                    .attributes(DuikerEntity::registerAttributes)
+                    .renderer(() -> DuikerRenderer::new)
+                    .spawns(8, 2, 3, ZawaSpawnCategory.WET_SAVANNA)
+                    .data(entityBuilder -> entityBuilder.sized(0.8F, 0.9F).clientTrackingRange(10))
+                    .build("duiker");
+    public static final RegistryObject<EntityType<GuenonEntity>> GUENON =
+            REGISTRY.builder(GuenonEntity::new, EntityClassification.CREATURE)
+                    .attributes(GuenonEntity::registerAttributes)
+                    .renderer(() -> GuenonRenderer::new)
+                    .spawns(10, 3, 4, ZawaSpawnCategory.WET_RAINFOREST)
+                    .data(entityBuilder -> entityBuilder.sized(0.65F, 0.7F).clientTrackingRange(10))
+                    .build("guenon");
 
     public static void registerSpawnPlacements() {
         EntitySpawnPlacementRegistry.register(POTTO.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
@@ -97,7 +111,7 @@ public class ExhibitAdditionsEntities {
         EntitySpawnPlacementRegistry.register(WILDEBEEST.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(WALLABY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(KLIPSPRINGER.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
-
+        EntitySpawnPlacementRegistry.register(GUENON.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
     }
 }
 

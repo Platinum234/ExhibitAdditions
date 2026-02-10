@@ -1,6 +1,7 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
 import com.github.platinum234.exhibitadditions.client.model.WallabyModel;
+import com.github.platinum234.exhibitadditions.entity.PeccaryEntity;
 import com.github.platinum234.exhibitadditions.entity.WallabyEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -13,8 +14,12 @@ public class WallabyRenderer extends ZawaMobRenderer<WallabyEntity, WallabyModel
 
     @Override
     protected void scale(WallabyEntity entity, MatrixStack matrixStack, float partialTickTime) {
-        float scale = entity.isBaby() ? 0.5F : 0.80F;
+        float scale = entity.isBaby() ? 0.5F : 0.70F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
+    }
+    @Override
+    protected boolean hasBabyVariants(WallabyEntity entity) {
+        return false;
     }
 }
