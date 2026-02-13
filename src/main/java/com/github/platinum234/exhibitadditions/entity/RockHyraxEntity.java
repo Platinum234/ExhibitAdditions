@@ -6,19 +6,15 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Pose;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.ai.attributes.Attributes;
-import net.minecraft.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
-import org.zawamod.zawa.world.entity.SpeciesVariantsEntity;
 import org.zawamod.zawa.world.entity.animal.ZawaLandEntity;
 
 import javax.annotation.Nullable;
 
-public class HyraxEntity extends ZawaLandEntity{
-    public HyraxEntity(EntityType<? extends ZawaLandEntity> type, World world) {
+public class RockHyraxEntity extends ZawaLandEntity{
+    public RockHyraxEntity(EntityType<? extends ZawaLandEntity> type, World world) {
         super(type, world);
     }
 
@@ -35,7 +31,7 @@ public class HyraxEntity extends ZawaLandEntity{
     @Nullable
     @Override
     public AgeableEntity getBreedOffspring(ServerWorld world, AgeableEntity entity) {
-        return ExhibitAdditionsEntities.HYRAX.get().create(world);
+        return ExhibitAdditionsEntities.ROCK_HYRAX.get().create(world);
     }
 
     @Override

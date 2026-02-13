@@ -16,8 +16,8 @@ import org.zawamod.zawa.world.entity.animal.ZawaLandEntity;
 
 import javax.annotation.Nullable;
 
-public class WildebeestEntity extends ZawaLandEntity {
-    public WildebeestEntity(EntityType<? extends ZawaLandEntity> type, World world) {
+public class BlueWildebeestEntity extends ZawaLandEntity {
+    public BlueWildebeestEntity(EntityType<? extends ZawaLandEntity> type, World world) {
         super(type, world);
     }
 
@@ -28,7 +28,7 @@ public class WildebeestEntity extends ZawaLandEntity {
     @Nullable
     @Override
     public AgeableEntity getBreedOffspring(ServerWorld world, AgeableEntity entity) {
-        return ExhibitAdditionsEntities.WILDEBEEST.get().create(world);
+        return ExhibitAdditionsEntities.BLUE_WILDEBEEST.get().create(world);
     }
     protected float getStandingEyeHeight(Pose pose, EntitySize size) {
         return size.height * 0.85F;

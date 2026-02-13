@@ -15,13 +15,13 @@ import org.zawamod.zawa.world.entity.animal.ZawaBaseEntity;
 public class ExhibitAdditionsEntities {
     public static final ZawaEntityRegistry REGISTRY = new ZawaEntityRegistry(ExhibitAdditions.MOD_ID, Zawa.ENTITIES_GROUP);
 
-    public static final RegistryObject<EntityType<SwampMonkeyEntity>> SWAMP_MONKEY =
-            REGISTRY.builder(SwampMonkeyEntity::new, EntityClassification.CREATURE)
-                    .attributes(SwampMonkeyEntity::registerAttributes)
-                    .renderer(() -> SwampMonkeyRenderer::new)
+    public static final RegistryObject<EntityType<AllensSwampMonkeyEntity>> ALLENS_SWAMP_MONKEY =
+            REGISTRY.builder(AllensSwampMonkeyEntity::new, EntityClassification.CREATURE)
+                    .attributes(AllensSwampMonkeyEntity::registerAttributes)
+                    .renderer(() -> AllensSwampMonkeyRenderer::new)
                     .spawns(10, 3, 4, ZawaSpawnCategory.WET_RAINFOREST)
                     .data(entityBuilder -> entityBuilder.sized(1.0F, 1.0F).clientTrackingRange(10))
-                    .build("swamp_monkey");
+                    .build("allens_swamp_monkey");
     public static final RegistryObject<EntityType<GerenukEntity>> GERENUK =
             REGISTRY.builder(GerenukEntity::new, EntityClassification.CREATURE)
                     .attributes(GerenukEntity::registerAttributes)
@@ -36,20 +36,20 @@ public class ExhibitAdditionsEntities {
                     .spawns(10, 2, 4, ZawaSpawnCategory.DRY_GRASSLAND, ZawaSpawnCategory.WET_RAINFOREST)
                     .data(entityBuilder -> entityBuilder.sized(0.9F, 0.9F).clientTrackingRange(10))
                     .build("peccary");
-    public static final RegistryObject<EntityType<PottoEntity>> POTTO =
-            REGISTRY.builder(PottoEntity::new, EntityClassification.CREATURE)
-                    .attributes(PottoEntity::registerAttributes)
-                    .renderer(() -> PottoRenderer::new)
+    public static final RegistryObject<EntityType<WestAfricanPottoEntity>> WEST_AFRICAN_POTTO =
+            REGISTRY.builder(WestAfricanPottoEntity::new, EntityClassification.CREATURE)
+                    .attributes(WestAfricanPottoEntity::registerAttributes)
+                    .renderer(() -> WestAfricanPottoRenderer::new)
                     .spawns(2, 1, 1, ZawaSpawnCategory.DEEP_RAINFOREST)
                     .data(entityBuilder -> entityBuilder.sized(0.4F, 0.4F).clientTrackingRange(10))
-                    .build("potto");
-    public static final RegistryObject<EntityType<HyraxEntity>> HYRAX =
-            REGISTRY.builder(HyraxEntity::new, EntityClassification.CREATURE)
-                    .attributes(HyraxEntity::registerAttributes)
-                    .renderer(() -> HyraxRenderer::new)
+                    .build("west_african_potto");
+    public static final RegistryObject<EntityType<RockHyraxEntity>> ROCK_HYRAX =
+            REGISTRY.builder(RockHyraxEntity::new, EntityClassification.CREATURE)
+                    .attributes(RockHyraxEntity::registerAttributes)
+                    .renderer(() -> RockHyraxRenderer::new)
                     .spawns(15, 1, 2, ZawaSpawnCategory.DRY_SAVANNA)
                     .data(entityBuilder -> entityBuilder.sized(0.35F, 0.35F).clientTrackingRange(10))
-                    .build("hyrax");
+                    .build("rock_hyrax");
     public static final RegistryObject<EntityType<LangurEntity>> LANGUR =
             REGISTRY.builder(LangurEntity::new, EntityClassification.CREATURE)
                     .attributes(LangurEntity::registerAttributes)
@@ -64,13 +64,13 @@ public class ExhibitAdditionsEntities {
                     .spawns(15, 3, 4, ZawaSpawnCategory.DRY_GRASSLAND)
                     .data(entityBuilder -> entityBuilder.sized(1.0F, 1.35F).clientTrackingRange(10))
                     .build("pronghorn");
-    public static final RegistryObject<EntityType<WildebeestEntity>> WILDEBEEST =
-            REGISTRY.builder(WildebeestEntity::new, EntityClassification.CREATURE)
-                    .attributes(WildebeestEntity::registerAttributes)
-                    .renderer(() -> WildebeestRenderer::new)
+    public static final RegistryObject<EntityType<BlueWildebeestEntity>> BLUE_WILDEBEEST =
+            REGISTRY.builder(BlueWildebeestEntity::new, EntityClassification.CREATURE)
+                    .attributes(BlueWildebeestEntity::registerAttributes)
+                    .renderer(() -> BlueWildebeestRenderer::new)
                     .spawns(10, 4, 5, ZawaSpawnCategory.DRY_SAVANNA)
                     .data(entityBuilder -> entityBuilder.sized(1.8F, 2.0F).clientTrackingRange(10))
-                    .build("wildebeest");
+                    .build("blue_wildebeest");
     public static final RegistryObject<EntityType<WallabyEntity>> WALLABY =
             REGISTRY.builder(WallabyEntity::new, EntityClassification.CREATURE)
                     .attributes(WallabyEntity::registerAttributes)
@@ -101,14 +101,14 @@ public class ExhibitAdditionsEntities {
                     .build("guenon");
 
     public static void registerSpawnPlacements() {
-        EntitySpawnPlacementRegistry.register(POTTO.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(WEST_AFRICAN_POTTO.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(PECCARY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(GERENUK.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
-        EntitySpawnPlacementRegistry.register(SWAMP_MONKEY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
-        EntitySpawnPlacementRegistry.register(HYRAX.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(ALLENS_SWAMP_MONKEY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(ROCK_HYRAX.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(LANGUR.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(PRONGHORN.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
-        EntitySpawnPlacementRegistry.register(WILDEBEEST.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
+        EntitySpawnPlacementRegistry.register(BLUE_WILDEBEEST.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(WALLABY.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(KLIPSPRINGER.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);
         EntitySpawnPlacementRegistry.register(GUENON.get(), EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, ZawaBaseEntity::checkLandSpawnRulesWithLeaves);

@@ -1,6 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.model;
 
-import com.github.platinum234.exhibitadditions.entity.PottoEntity;
+import com.github.platinum234.exhibitadditions.entity.WestAfricanPottoEntity;
 import com.google.common.collect.ImmutableList;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.client.renderer.model.ModelRenderer;
@@ -8,7 +8,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 import org.zawamod.zawa.client.model.ZawaBaseModel;
 
-public abstract class PottoModel extends ZawaBaseModel<PottoEntity> {
+public abstract class WestAfricanPottoModel extends ZawaBaseModel<WestAfricanPottoEntity> {
     public ModelRenderer Chest;
     protected Iterable<ModelRenderer> parts;
 
@@ -22,7 +22,7 @@ public abstract class PottoModel extends ZawaBaseModel<PottoEntity> {
         return this.parts;
     }
 
-    public static class Adult extends PottoModel {
+    public static class Adult extends WestAfricanPottoModel {
 
         public ModelRenderer Body;
         public ModelRenderer ArmLeft;
@@ -169,7 +169,7 @@ public abstract class PottoModel extends ZawaBaseModel<PottoEntity> {
         }
 
         @Override
-        public void setupAnim(PottoEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        public void setupAnim(WestAfricanPottoEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
             super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
             this.Neck.yRot = (float) Math.toRadians(netHeadYaw) * 0.5F;
             this.Head.yRot = (float) Math.toRadians(netHeadYaw) * 0.5F;
@@ -208,7 +208,7 @@ public abstract class PottoModel extends ZawaBaseModel<PottoEntity> {
         }
 
 
-    public static class Child extends PottoModel {
+    public static class Child extends WestAfricanPottoModel {
 
         public ModelRenderer Body;
         public ModelRenderer ArmLeft;
@@ -355,7 +355,7 @@ public abstract class PottoModel extends ZawaBaseModel<PottoEntity> {
         }
 
         @Override
-        public void setupAnim(PottoEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        public void setupAnim(WestAfricanPottoEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
             super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
             this.Neck.yRot = (float) Math.toRadians(netHeadYaw) * 0.5F;
             this.Head.yRot = (float) Math.toRadians(netHeadYaw) * 0.5F;

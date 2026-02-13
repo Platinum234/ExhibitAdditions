@@ -1,7 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.model;
 
-import com.github.platinum234.exhibitadditions.entity.LangurEntity;
-import com.github.platinum234.exhibitadditions.entity.SwampMonkeyEntity;
+import com.github.platinum234.exhibitadditions.entity.AllensSwampMonkeyEntity;
 import com.google.common.collect.ImmutableList;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.client.renderer.model.ModelRenderer;
@@ -9,7 +8,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 import org.zawamod.zawa.client.model.ZawaBaseModel;
 
-public abstract class SwampMonkeyModel extends ZawaBaseModel<SwampMonkeyEntity> {
+public abstract class AllensSwampMonkeyModel extends ZawaBaseModel<AllensSwampMonkeyEntity> {
     public ModelRenderer Chest;
     protected Iterable<ModelRenderer> parts;
 
@@ -23,7 +22,7 @@ public abstract class SwampMonkeyModel extends ZawaBaseModel<SwampMonkeyEntity> 
         return this.parts;
     }
 
-    public static class Adult extends SwampMonkeyModel {
+    public static class Adult extends AllensSwampMonkeyModel {
 
         public ModelRenderer Body;
         public ModelRenderer Neck;
@@ -239,7 +238,7 @@ public abstract class SwampMonkeyModel extends ZawaBaseModel<SwampMonkeyEntity> 
         }
 
         @Override
-        public void setupAnim(SwampMonkeyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        public void setupAnim(AllensSwampMonkeyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
             super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
             this.Neck.yRot = (float) Math.toRadians(netHeadYaw) * 0.5F;
             this.Head.yRot = (float) Math.toRadians(netHeadYaw) * 0.5F;
@@ -277,7 +276,7 @@ public abstract class SwampMonkeyModel extends ZawaBaseModel<SwampMonkeyEntity> 
     }
 
 
-    public static class Child extends SwampMonkeyModel {
+    public static class Child extends AllensSwampMonkeyModel {
 
         public ModelRenderer ThighLeft;
         public ModelRenderer ThighRight;
@@ -464,7 +463,7 @@ public abstract class SwampMonkeyModel extends ZawaBaseModel<SwampMonkeyEntity> 
         }
 
         @Override
-        public void setupAnim(SwampMonkeyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        public void setupAnim(AllensSwampMonkeyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
             super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
             this.Neck.yRot = (float)Math.toRadians((double)netHeadYaw) * 0.5F;
             this.Head.yRot = (float)Math.toRadians((double)netHeadYaw) * 0.5F;

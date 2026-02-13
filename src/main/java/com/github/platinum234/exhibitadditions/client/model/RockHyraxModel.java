@@ -1,6 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.model;
 
-import com.github.platinum234.exhibitadditions.entity.HyraxEntity;
+import com.github.platinum234.exhibitadditions.entity.RockHyraxEntity;
 import com.google.common.collect.ImmutableList;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.client.renderer.model.ModelRenderer;
@@ -8,7 +8,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 import org.zawamod.zawa.client.model.ZawaBaseModel;
 
-public abstract class HyraxModel extends ZawaBaseModel<HyraxEntity> {
+public abstract class RockHyraxModel extends ZawaBaseModel<RockHyraxEntity> {
     public ModelRenderer Hips;
     protected Iterable<ModelRenderer> parts;
 
@@ -22,7 +22,7 @@ public abstract class HyraxModel extends ZawaBaseModel<HyraxEntity> {
         return this.parts;
     }
 
-    public static class Adult extends HyraxModel {
+    public static class Adult extends RockHyraxModel {
 
         public ModelRenderer ThighLeft;
         public ModelRenderer ThighRight;
@@ -194,7 +194,7 @@ public abstract class HyraxModel extends ZawaBaseModel<HyraxEntity> {
         }
 
         @Override
-        public void setupAnim(HyraxEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        public void setupAnim(RockHyraxEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
             super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
             this.Head.xRot = (headPitch / (180F / (float) Math.PI)) + 0.62F;
             this.Neck.yRot = netHeadYaw / (180F / (float) Math.PI);
@@ -236,7 +236,7 @@ public abstract class HyraxModel extends ZawaBaseModel<HyraxEntity> {
 }
 
 
-    public static class Child extends HyraxModel {
+    public static class Child extends RockHyraxModel {
 
         public ModelRenderer ThighLeft;
         public ModelRenderer ThighRight;
@@ -408,7 +408,7 @@ public abstract class HyraxModel extends ZawaBaseModel<HyraxEntity> {
         }
 
         @Override
-        public void setupAnim(HyraxEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+        public void setupAnim(RockHyraxEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
             super.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
             this.Head.xRot = (headPitch / (180F / (float) Math.PI)) + 0.62F;
             this.Neck.yRot = netHeadYaw / (180F / (float) Math.PI);

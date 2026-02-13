@@ -1,7 +1,7 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
 import com.github.platinum234.exhibitadditions.client.model.PeccaryModel;
-import com.github.platinum234.exhibitadditions.entity.HyraxEntity;
+import com.github.platinum234.exhibitadditions.entity.RockHyraxEntity;
 import com.github.platinum234.exhibitadditions.entity.PeccaryEntity;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
