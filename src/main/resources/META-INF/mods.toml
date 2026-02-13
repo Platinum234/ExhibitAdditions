@@ -1,38 +1,36 @@
-
 modLoader="javafml"
-loaderVersion="[36.2.0,)"
-license="GNU GPLv3"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
 issueTrackerURL="https://github.com/Platinum234/ExhibitAdditions/issues"
 
 [[mods]]
-modId="exhibitadditions"
-version="${file.jarVersion}"
-displayName="ZAWA: Exhibit Additions Addon"
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
 #updateJSONURL=""
 displayURL="https://www.curseforge.com/minecraft/mc-mods/exhibit-additions"
 logoFile="logo.png"
-credits="Plat, Crossy, heavy808s, Arty"
-authors="HelloCrossy67"
-description='''
-Wonders of the World is an addon mod for ZAWA Evolved, on MC JAVA version 1.16.5. This mod adds a total of 16 animals, with multiple species of some of these entities AND a total of 5 plushies! The mod is of the ZAWA Style and follows their guidelines relatively closely. A big thanks to our team, the ZAWA Devs: Fisk & Mnesikos, aswell as our amazing sponsor Shoresy! Stay tuned for future updates, along with more plushies!'''
+credits="${mod_credits}"
+authors="${mod_authors}"
+description='''${mod_description}'''
 
-[[dependencies.exhibitadditions]]
+[[dependencies.${mod_id}]]
 modId="forge"
 mandatory=true
-versionRange="[36.2.20,)"
+versionRange="${forge_version_range}"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.exhibitadditions]]
+[[dependencies.${mod_id}]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.16.5,1.17)"
+versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.exhibitadditions]]
+[[dependencies.${mod_id}]]
 modId="zawa"
 mandatory=true
-versionRange="[1.16.5-1.0.2-BeefBeta-TropicalExpedition3,)"
+versionRange="${zawa_version_range}"
 ordering="AFTER"
 side="BOTH"
