@@ -1,19 +1,18 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
 import com.github.platinum234.exhibitadditions.client.model.WallabyModel;
-import com.github.platinum234.exhibitadditions.entity.PeccaryEntity;
 import com.github.platinum234.exhibitadditions.entity.WallabyEntity;
-import com.mojang.blaze3d.matrix.MatrixStack;
-import net.minecraft.client.renderer.entity.EntityRendererManager;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class WallabyRenderer extends ZawaMobRenderer<WallabyEntity, WallabyModel> {
-    public WallabyRenderer(EntityRendererManager manager) {
-        super(manager, new WallabyModel.Adult(), new WallabyModel.Child(), 0.45F);
+    public WallabyRenderer(EntityRendererProvider.Context context) {
+        super(context, new WallabyModel.Adult(), new WallabyModel.Child(), 0.45F);
     }
 
     @Override
-    protected void scale(WallabyEntity entity, MatrixStack matrixStack, float partialTickTime) {
+    protected void scale(WallabyEntity entity, PoseStack matrixStack, float partialTickTime) {
         float scale = entity.isBaby() ? 0.5F : 0.70F;
         matrixStack.scale(scale, scale, scale);
         super.scale(entity, matrixStack, partialTickTime);
