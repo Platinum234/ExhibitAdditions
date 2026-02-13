@@ -1,5 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
+import com.github.platinum234.exhibitadditions.client.model.ExhibitAdditionsModelLayers;
 import com.github.platinum234.exhibitadditions.client.model.PronghornModel;
 import com.github.platinum234.exhibitadditions.entity.PronghornEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -8,7 +9,7 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class PronghornRenderer extends ZawaMobRenderer<PronghornEntity, PronghornModel> {
     public PronghornRenderer(EntityRendererProvider.Context context) {
-        super(context, new PronghornModel.Adult(), new PronghornModel.Child(), 0.5F);
+        super(context, new PronghornModel.Adult(context.bakeLayer(ExhibitAdditionsModelLayers.PRONGHORN_ADULT)), new PronghornModel.Child(context.bakeLayer(ExhibitAdditionsModelLayers.PRONGHORN_CHILD)), 0.5F);
     }
 
     @Override

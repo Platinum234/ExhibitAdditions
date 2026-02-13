@@ -1,5 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
+import com.github.platinum234.exhibitadditions.client.model.ExhibitAdditionsModelLayers;
 import com.github.platinum234.exhibitadditions.client.model.SwampMonkeyModel;
 import com.github.platinum234.exhibitadditions.entity.SwampMonkeyEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -8,7 +9,7 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class SwampMonkeyRenderer extends ZawaMobRenderer<SwampMonkeyEntity, SwampMonkeyModel> {
     public SwampMonkeyRenderer(EntityRendererProvider.Context context) {
-        super(context, new SwampMonkeyModel.Adult(), new SwampMonkeyModel.Child(), 0.5F);
+        super(context, new SwampMonkeyModel.Adult(context.bakeLayer(ExhibitAdditionsModelLayers.SWAMP_MONKEY_ADULT)), new SwampMonkeyModel.Child(context.bakeLayer(ExhibitAdditionsModelLayers.SWAMP_MONKEY_CHILD)), 0.5F);
     }
 
     @Override

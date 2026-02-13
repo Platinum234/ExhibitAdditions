@@ -1,5 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
+import com.github.platinum234.exhibitadditions.client.model.ExhibitAdditionsModelLayers;
 import com.github.platinum234.exhibitadditions.client.model.KlipspringerModel;
 import com.github.platinum234.exhibitadditions.entity.KlipspringerEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -8,7 +9,7 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class KlipspringerRenderer extends ZawaMobRenderer<KlipspringerEntity, KlipspringerModel> {
     public KlipspringerRenderer(EntityRendererProvider.Context context) {
-        super(context, new KlipspringerModel.Adult(), new KlipspringerModel.Child(), 0.4F);
+        super(context, new KlipspringerModel.Adult(context.bakeLayer(ExhibitAdditionsModelLayers.KLIPSPRINGER_ADULT)), new KlipspringerModel.Child(context.bakeLayer(ExhibitAdditionsModelLayers.KLIPSPRINGER_CHILD)), 0.4F);
     }
 
     @Override

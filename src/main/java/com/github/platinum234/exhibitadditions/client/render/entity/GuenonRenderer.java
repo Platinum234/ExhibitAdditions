@@ -1,5 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
+import com.github.platinum234.exhibitadditions.client.model.ExhibitAdditionsModelLayers;
 import com.github.platinum234.exhibitadditions.client.model.GuenonModel;
 import com.github.platinum234.exhibitadditions.entity.GuenonEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -8,7 +9,7 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class GuenonRenderer extends ZawaMobRenderer<GuenonEntity, GuenonModel> {
     public GuenonRenderer(EntityRendererProvider.Context context) {
-        super(context, new GuenonModel.Adult(), new GuenonModel.Child(), 0.4F);
+        super(context, new GuenonModel.Adult(context.bakeLayer(ExhibitAdditionsModelLayers.GUENON_ADULT)), new GuenonModel.Child(context.bakeLayer(ExhibitAdditionsModelLayers.GUENON_CHILD)), 0.4F);
     }
 
     @Override

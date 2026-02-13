@@ -18,6 +18,30 @@ import java.util.function.Supplier;
 public class ExhibitAdditionsModelLayers {
     public static final Set<ModelLayerLocation> ALL_MODELS = Sets.newHashSet();
     public static final List<Tuple<ModelLayerLocation, Supplier<LayerDefinition>>> MODEL_LAYERS_LIST = new ArrayList<>();
+    public static final ModelLayerLocation SWAMP_MONKEY_ADULT = register("swamp_monkey", "adult", SwampMonkeyModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation SWAMP_MONKEY_CHILD = register("swamp_monkey", "child", SwampMonkeyModel.Child::createBodyLayer);
+    public static final ModelLayerLocation GERENUK_ADULT = register("gerenuk", "adult", GerenukModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation GERENUK_CHILD = register("gerenuk", "child", GerenukModel.Child::createBodyLayer);
+    public static final ModelLayerLocation PECCARY_ADULT = register("peccary", "adult", PeccaryModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation PECCARY_CHILD = register("peccary", "child", PeccaryModel.Child::createBodyLayer);
+    public static final ModelLayerLocation POTTO_ADULT = register("potto", "adult", PottoModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation POTTO_CHILD = register("potto", "child", PottoModel.Child::createBodyLayer);
+    public static final ModelLayerLocation HYRAX_ADULT = register("hyrax", "adult", HyraxModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation HYRAX_CHILD = register("hyrax", "child", HyraxModel.Child::createBodyLayer);
+    public static final ModelLayerLocation LANGUR_ADULT = register("langur", "adult", LangurModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation LANGUR_CHILD = register("langur", "child", LangurModel.Child::createBodyLayer);
+    public static final ModelLayerLocation PRONGHORN_ADULT = register("pronghorn", "adult", PronghornModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation PRONGHORN_CHILD = register("pronghorn", "child", PronghornModel.Child::createBodyLayer);
+    public static final ModelLayerLocation WILDEBEEST_ADULT = register("wildebeest", "adult", WildebeestModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation WILDEBEEST_CHILD = register("wildebeest", "child", WildebeestModel.Child::createBodyLayer);
+    public static final ModelLayerLocation WALLABY_ADULT = register("wallaby", "adult", WallabyModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation WALLABY_CHILD = register("wallaby", "child", WallabyModel.Child::createBodyLayer);
+    public static final ModelLayerLocation KLIPSPRINGER_ADULT = register("klipspringer", "adult", KlipspringerModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation KLIPSPRINGER_CHILD = register("klipspringer", "child", KlipspringerModel.Child::createBodyLayer);
+    public static final ModelLayerLocation DUIKER_ADULT = register("duiker", "adult", DuikerModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation DUIKER_CHILD = register("duiker", "child", DuikerModel.Child::createBodyLayer);
+    public static final ModelLayerLocation GUENON_ADULT = register("guenon", "adult", GuenonModel.Adult::createBodyLayer);
+    public static final ModelLayerLocation GUENON_CHILD = register("guenon", "child", GuenonModel.Child::createBodyLayer);
 
     public ExhibitAdditionsModelLayers() {
     }

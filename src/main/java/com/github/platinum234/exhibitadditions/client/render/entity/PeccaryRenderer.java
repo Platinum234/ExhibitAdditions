@@ -1,5 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
+import com.github.platinum234.exhibitadditions.client.model.ExhibitAdditionsModelLayers;
 import com.github.platinum234.exhibitadditions.client.model.PeccaryModel;
 import com.github.platinum234.exhibitadditions.entity.PeccaryEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -8,7 +9,7 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class PeccaryRenderer extends ZawaMobRenderer<PeccaryEntity, PeccaryModel> {
     public PeccaryRenderer(EntityRendererProvider.Context context) {
-        super(context, new PeccaryModel.Adult(), new PeccaryModel.Child(), 0.5F);
+        super(context, new PeccaryModel.Adult(context.bakeLayer(ExhibitAdditionsModelLayers.PECCARY_ADULT)), new PeccaryModel.Child(context.bakeLayer(ExhibitAdditionsModelLayers.PECCARY_CHILD)), 0.5F);
     }
 
     @Override

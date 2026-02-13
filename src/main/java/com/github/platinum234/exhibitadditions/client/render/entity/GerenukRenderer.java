@@ -1,5 +1,6 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
+import com.github.platinum234.exhibitadditions.client.model.ExhibitAdditionsModelLayers;
 import com.github.platinum234.exhibitadditions.client.model.GerenukModel;
 import com.github.platinum234.exhibitadditions.entity.GerenukEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -8,7 +9,7 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class GerenukRenderer extends ZawaMobRenderer<GerenukEntity, GerenukModel> {
     public GerenukRenderer(EntityRendererProvider.Context context) {
-        super(context, new GerenukModel.Adult(), new GerenukModel.Child(), 0.6F);
+        super(context, new GerenukModel.Adult(context.bakeLayer(ExhibitAdditionsModelLayers.GERENUK_ADULT)), new GerenukModel.Child(context.bakeLayer(ExhibitAdditionsModelLayers.GERENUK_CHILD)), 0.6F);
     }
 
     @Override

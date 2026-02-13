@@ -1,6 +1,7 @@
 package com.github.platinum234.exhibitadditions.client.render.entity;
 
 import com.github.platinum234.exhibitadditions.client.model.DuikerModel;
+import com.github.platinum234.exhibitadditions.client.model.ExhibitAdditionsModelLayers;
 import com.github.platinum234.exhibitadditions.entity.DuikerEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -8,7 +9,7 @@ import org.zawamod.zawa.client.renderer.entity.ZawaMobRenderer;
 
 public class DuikerRenderer extends ZawaMobRenderer<DuikerEntity, DuikerModel> {
     public DuikerRenderer(EntityRendererProvider.Context context) {
-        super(context, new DuikerModel.Adult(), new DuikerModel.Child(), 0.4F);
+        super(context, new DuikerModel.Adult(context.bakeLayer(ExhibitAdditionsModelLayers.DUIKER_ADULT)), new DuikerModel.Child(context.bakeLayer(ExhibitAdditionsModelLayers.DUIKER_CHILD)), 0.4F);
     }
 
     @Override
