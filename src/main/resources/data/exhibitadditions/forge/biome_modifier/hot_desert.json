@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:and",
+    "values": [
+      "#is_overworld",
+      "#forge:is_sandy"
+    ]
+  },
+  "spawners": [
+    {
+      "type": "ecoregions:klipspringer",
+      "weight": 10,
+      "minCount": 1,
+      "maxCount": 2
+    }
+    ]
+}
